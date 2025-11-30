@@ -13,9 +13,13 @@ def main():
         
         total = sum(scores)
         average = total / len(scores)
+        maximum = max(scores)
+        minimum = min(scores)
 
         print(f"Sum of scores: {total}")
         print(f"Average of scores: {average}")
+        print(f"Maximum score: {maximum}")
+        print(f"Minimum score: {minimum}")
 
     except ValueError:
         print("Invalid input! Please enter numeric values only.")
